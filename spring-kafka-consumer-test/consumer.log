@@ -1,0 +1,1089 @@
+2025-04-09T10:48:30.276+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] k.c.t.SpringKafkaConsumerTestApplication : Starting SpringKafkaConsumerTestApplication using Java 17.0.12 with PID 14392 (C:\Users\lotte6_SpringProject\Desktop\Workspace\MSA\spring-kafka-consumer-test\build\classes\java\main started by lotte6_SpringProject in C:\Users\lotte6_SpringProject\Desktop\Workspace\MSA\spring-kafka-consumer-test)
+2025-04-09T10:48:30.278+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] k.c.t.SpringKafkaConsumerTestApplication : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T10:48:30.315+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-09T10:48:30.316+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-09T10:48:31.083+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-04-09T10:48:31.097+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-09T10:48:31.098+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-09T10:48:31.134+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-09T10:48:31.134+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 817 ms
+2025-04-09T10:48:31.495+09:00  WARN 14392 --- [spring-kafka-consumer-test] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-04-09T10:48:31.545+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-04-09T10:48:31.577+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group-my-topic-01-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-my-topic-01
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-09T10:48:31.613+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-09T10:48:31.683+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-04-09T10:48:31.684+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-04-09T10:48:31.684+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1744163311681
+2025-04-09T10:48:31.687+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Subscribed to topic(s): my-topic-01
+2025-04-09T10:48:31.694+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group-my-topic-03-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-my-topic-03
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-09T10:48:31.695+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-09T10:48:31.704+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-04-09T10:48:31.705+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-04-09T10:48:31.705+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1744163311704
+2025-04-09T10:48:31.705+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Subscribed to topic(s): my-topic-03
+2025-04-09T10:48:31.707+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group-my-topic-02-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-my-topic-02
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-09T10:48:31.707+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-09T10:48:31.713+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-04-09T10:48:31.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-04-09T10:48:31.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1744163311713
+2025-04-09T10:48:31.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Subscribed to topic(s): my-topic-02
+2025-04-09T10:48:31.722+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] k.c.t.SpringKafkaConsumerTestApplication : Started SpringKafkaConsumerTestApplication in 1.839 seconds (process running for 2.32)
+2025-04-09T10:48:32.028+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Cluster ID: PWGzVrumRyGH8LDAJv7f6Q
+2025-04-09T10:48:32.028+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Cluster ID: PWGzVrumRyGH8LDAJv7f6Q
+2025-04-09T10:48:32.028+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Cluster ID: PWGzVrumRyGH8LDAJv7f6Q
+2025-04-09T10:48:32.029+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Discovered group coordinator localhost:9090 (id: 2147483646 rack: null)
+2025-04-09T10:48:32.029+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Discovered group coordinator localhost:9090 (id: 2147483646 rack: null)
+2025-04-09T10:48:32.029+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Discovered group coordinator localhost:9090 (id: 2147483646 rack: null)
+2025-04-09T10:48:32.033+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] (Re-)joining group
+2025-04-09T10:48:32.032+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] (Re-)joining group
+2025-04-09T10:48:32.032+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] (Re-)joining group
+2025-04-09T10:48:32.047+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Request joining group due to: need to re-join with the given member-id: consumer-group-my-topic-02-3-74eef624-a625-428e-83d6-0e84f7e2b710
+2025-04-09T10:48:32.047+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Request joining group due to: need to re-join with the given member-id: consumer-group-my-topic-03-2-920349e1-5020-4f0e-a839-8f0359a8b8fd
+2025-04-09T10:48:32.047+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Request joining group due to: need to re-join with the given member-id: consumer-group-my-topic-01-1-bbd20c75-55ee-42c6-a780-fedeec80e483
+2025-04-09T10:48:32.048+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] (Re-)joining group
+2025-04-09T10:48:32.048+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] (Re-)joining group
+2025-04-09T10:48:32.048+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] (Re-)joining group
+2025-04-09T10:48:32.051+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Successfully joined group with generation Generation{generationId=11, memberId='consumer-group-my-topic-02-3-74eef624-a625-428e-83d6-0e84f7e2b710', protocol='range'}
+2025-04-09T10:48:32.052+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Successfully joined group with generation Generation{generationId=13, memberId='consumer-group-my-topic-01-1-bbd20c75-55ee-42c6-a780-fedeec80e483', protocol='range'}
+2025-04-09T10:48:32.051+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Successfully joined group with generation Generation{generationId=11, memberId='consumer-group-my-topic-03-2-920349e1-5020-4f0e-a839-8f0359a8b8fd', protocol='range'}
+2025-04-09T10:48:32.060+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Finished assignment for group at generation 13: {consumer-group-my-topic-01-1-bbd20c75-55ee-42c6-a780-fedeec80e483=Assignment(partitions=[my-topic-01-0])}
+2025-04-09T10:48:32.060+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Finished assignment for group at generation 11: {consumer-group-my-topic-02-3-74eef624-a625-428e-83d6-0e84f7e2b710=Assignment(partitions=[my-topic-02-0, my-topic-02-1])}
+2025-04-09T10:48:32.060+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Finished assignment for group at generation 11: {consumer-group-my-topic-03-2-920349e1-5020-4f0e-a839-8f0359a8b8fd=Assignment(partitions=[my-topic-03-0, my-topic-03-1, my-topic-03-2])}
+2025-04-09T10:48:32.064+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Successfully synced group in generation Generation{generationId=13, memberId='consumer-group-my-topic-01-1-bbd20c75-55ee-42c6-a780-fedeec80e483', protocol='range'}
+2025-04-09T10:48:32.064+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Successfully synced group in generation Generation{generationId=11, memberId='consumer-group-my-topic-02-3-74eef624-a625-428e-83d6-0e84f7e2b710', protocol='range'}
+2025-04-09T10:48:32.064+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Successfully synced group in generation Generation{generationId=11, memberId='consumer-group-my-topic-03-2-920349e1-5020-4f0e-a839-8f0359a8b8fd', protocol='range'}
+2025-04-09T10:48:32.065+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Notifying assignor about the new Assignment(partitions=[my-topic-03-0, my-topic-03-1, my-topic-03-2])
+2025-04-09T10:48:32.065+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Notifying assignor about the new Assignment(partitions=[my-topic-02-0, my-topic-02-1])
+2025-04-09T10:48:32.065+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Notifying assignor about the new Assignment(partitions=[my-topic-01-0])
+2025-04-09T10:48:32.067+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Adding newly assigned partitions: my-topic-03-0, my-topic-03-1, my-topic-03-2
+2025-04-09T10:48:32.067+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Adding newly assigned partitions: my-topic-02-0, my-topic-02-1
+2025-04-09T10:48:32.067+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Adding newly assigned partitions: my-topic-01-0
+2025-04-09T10:48:32.075+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-01-0 to the committed offset FetchPosition{offset=100005, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T10:48:32.075+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-02-0 to the committed offset FetchPosition{offset=54958, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T10:48:32.075+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-03-1 to the committed offset FetchPosition{offset=38836, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T10:48:32.075+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-03-0 to the committed offset FetchPosition{offset=33473, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T10:48:32.075+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-02-1 to the committed offset FetchPosition{offset=50044, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T10:48:32.075+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-03-2 to the committed offset FetchPosition{offset=29691, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T10:48:32.077+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions assigned: [my-topic-03-0, my-topic-03-1, my-topic-03-2]
+2025-04-09T10:48:32.077+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-01: partitions assigned: [my-topic-01-0]
+2025-04-09T10:48:32.077+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-02: partitions assigned: [my-topic-02-0, my-topic-02-1]
+2025-04-09T10:57:32.292+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Node -1 disconnected.
+2025-04-09T10:57:32.292+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Node -1 disconnected.
+2025-04-09T10:57:32.292+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Node -1 disconnected.
+2025-04-09T11:07:32.168+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Node -1 disconnected.
+2025-04-09T11:07:32.168+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Node -1 disconnected.
+2025-04-09T11:07:32.168+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Node -1 disconnected.
+2025-04-09T11:09:32.890+09:00  INFO 14392 --- [spring-kafka-consumer-test] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-09T11:09:32.894+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Revoke previously assigned partitions my-topic-01-0
+2025-04-09T11:09:32.894+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Revoke previously assigned partitions my-topic-03-0, my-topic-03-1, my-topic-03-2
+2025-04-09T11:09:32.894+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Revoke previously assigned partitions my-topic-02-0, my-topic-02-1
+2025-04-09T11:09:32.895+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-01: partitions revoked: [my-topic-01-0]
+2025-04-09T11:09:32.895+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions revoked: [my-topic-03-0, my-topic-03-1, my-topic-03-2]
+2025-04-09T11:09:32.895+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-02: partitions revoked: [my-topic-02-0, my-topic-02-1]
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Member consumer-group-my-topic-03-2-920349e1-5020-4f0e-a839-8f0359a8b8fd sending LeaveGroup request to coordinator localhost:9090 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Member consumer-group-my-topic-01-1-bbd20c75-55ee-42c6-a780-fedeec80e483 sending LeaveGroup request to coordinator localhost:9090 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Member consumer-group-my-topic-02-3-74eef624-a625-428e-83d6-0e84f7e2b710 sending LeaveGroup request to coordinator localhost:9090 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Unsubscribed all topics or patterns and assigned partitions
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Unsubscribed all topics or patterns and assigned partitions
+2025-04-09T11:09:32.896+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Unsubscribed all topics or patterns and assigned partitions
+2025-04-09T11:09:32.898+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.898+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.898+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.898+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-3, groupId=group-my-topic-02] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.898+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-1, groupId=group-my-topic-01] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:09:32.898+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-2, groupId=group-my-topic-03] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:09:33.200+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-04-09T11:09:33.200+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-04-09T11:09:33.200+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-04-09T11:09:33.201+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-09T11:09:33.201+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-09T11:09:33.201+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-09T11:09:33.201+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-09T11:09:33.201+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-09T11:09:33.201+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-04-09T11:09:33.201+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-09T11:09:33.201+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-04-09T11:09:33.201+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-04-09T11:09:33.207+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-group-my-topic-03-2 unregistered
+2025-04-09T11:09:33.207+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-group-my-topic-02-3 unregistered
+2025-04-09T11:09:33.207+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-02: Consumer stopped
+2025-04-09T11:09:33.207+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: Consumer stopped
+2025-04-09T11:09:33.207+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-group-my-topic-01-1 unregistered
+2025-04-09T11:09:33.208+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-01: Consumer stopped
+2025-04-09T11:09:33.209+09:00  INFO 14392 --- [spring-kafka-consumer-test] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-09T11:09:33.309+09:00  INFO 14392 --- [spring-kafka-consumer-test] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-09T11:09:33.378+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] k.c.t.SpringKafkaConsumerTestApplication : Starting SpringKafkaConsumerTestApplication using Java 17.0.12 with PID 14392 (C:\Users\lotte6_SpringProject\Desktop\Workspace\MSA\spring-kafka-consumer-test\build\classes\java\main started by lotte6_SpringProject in C:\Users\lotte6_SpringProject\Desktop\Workspace\MSA\spring-kafka-consumer-test)
+2025-04-09T11:09:33.378+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] k.c.t.SpringKafkaConsumerTestApplication : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T11:09:33.584+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-04-09T11:09:33.584+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-09T11:09:33.584+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-09T11:09:33.596+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-09T11:09:33.597+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 217 ms
+2025-04-09T11:09:33.686+09:00  WARN 14392 --- [spring-kafka-consumer-test] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-04-09T11:09:33.697+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-04-09T11:09:33.698+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group-my-topic-03-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-my-topic-03
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-09T11:09:33.698+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-09T11:09:33.702+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-04-09T11:09:33.702+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-04-09T11:09:33.702+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1744164573702
+2025-04-09T11:09:33.702+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Subscribed to topic(s): my-topic-03
+2025-04-09T11:09:33.704+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group-my-topic-02-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-my-topic-02
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-09T11:09:33.704+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-09T11:09:33.707+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Cluster ID: PWGzVrumRyGH8LDAJv7f6Q
+2025-04-09T11:09:33.708+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Discovered group coordinator localhost:9090 (id: 2147483646 rack: null)
+2025-04-09T11:09:33.708+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-04-09T11:09:33.708+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-04-09T11:09:33.708+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1744164573708
+2025-04-09T11:09:33.708+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Subscribed to topic(s): my-topic-02
+2025-04-09T11:09:33.708+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] (Re-)joining group
+2025-04-09T11:09:33.709+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group-my-topic-01-6
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-my-topic-01
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-09T11:09:33.710+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-09T11:09:33.711+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Request joining group due to: need to re-join with the given member-id: consumer-group-my-topic-03-4-ea06dde3-f7fe-499c-89ff-81b4b477bfbd
+2025-04-09T11:09:33.712+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] (Re-)joining group
+2025-04-09T11:09:33.713+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Cluster ID: PWGzVrumRyGH8LDAJv7f6Q
+2025-04-09T11:09:33.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Discovered group coordinator localhost:9090 (id: 2147483646 rack: null)
+2025-04-09T11:09:33.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Successfully joined group with generation Generation{generationId=13, memberId='consumer-group-my-topic-03-4-ea06dde3-f7fe-499c-89ff-81b4b477bfbd', protocol='range'}
+2025-04-09T11:09:33.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-04-09T11:09:33.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-04-09T11:09:33.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1744164573714
+2025-04-09T11:09:33.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] (Re-)joining group
+2025-04-09T11:09:33.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Subscribed to topic(s): my-topic-01
+2025-04-09T11:09:33.714+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Finished assignment for group at generation 13: {consumer-group-my-topic-03-4-ea06dde3-f7fe-499c-89ff-81b4b477bfbd=Assignment(partitions=[my-topic-03-0, my-topic-03-1, my-topic-03-2])}
+2025-04-09T11:09:33.715+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group-my-topic-03-7
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-my-topic-03
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-09T11:09:33.716+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Successfully synced group in generation Generation{generationId=13, memberId='consumer-group-my-topic-03-4-ea06dde3-f7fe-499c-89ff-81b4b477bfbd', protocol='range'}
+2025-04-09T11:09:33.716+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-09T11:09:33.716+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Notifying assignor about the new Assignment(partitions=[my-topic-03-0, my-topic-03-1, my-topic-03-2])
+2025-04-09T11:09:33.716+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Adding newly assigned partitions: my-topic-03-0, my-topic-03-1, my-topic-03-2
+2025-04-09T11:09:33.717+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Request joining group due to: need to re-join with the given member-id: consumer-group-my-topic-02-5-d42bcf5f-48ab-4ee5-b0eb-26296afcb0d6
+2025-04-09T11:09:33.717+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] (Re-)joining group
+2025-04-09T11:09:33.718+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-03-1 to the committed offset FetchPosition{offset=38836, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T11:09:33.718+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-03-0 to the committed offset FetchPosition{offset=33473, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T11:09:33.718+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-03-2 to the committed offset FetchPosition{offset=29691, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T11:09:33.718+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions assigned: [my-topic-03-0, my-topic-03-1, my-topic-03-2]
+2025-04-09T11:09:33.718+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Cluster ID: PWGzVrumRyGH8LDAJv7f6Q
+2025-04-09T11:09:33.719+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Discovered group coordinator localhost:9090 (id: 2147483646 rack: null)
+2025-04-09T11:09:33.719+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Successfully joined group with generation Generation{generationId=13, memberId='consumer-group-my-topic-02-5-d42bcf5f-48ab-4ee5-b0eb-26296afcb0d6', protocol='range'}
+2025-04-09T11:09:33.719+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] (Re-)joining group
+2025-04-09T11:09:33.719+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Finished assignment for group at generation 13: {consumer-group-my-topic-02-5-d42bcf5f-48ab-4ee5-b0eb-26296afcb0d6=Assignment(partitions=[my-topic-02-0, my-topic-02-1])}
+2025-04-09T11:09:33.721+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-04-09T11:09:33.721+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-04-09T11:09:33.721+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1744164573721
+2025-04-09T11:09:33.721+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Successfully synced group in generation Generation{generationId=13, memberId='consumer-group-my-topic-02-5-d42bcf5f-48ab-4ee5-b0eb-26296afcb0d6', protocol='range'}
+2025-04-09T11:09:33.722+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Subscribed to topic(s): my-topic-03
+2025-04-09T11:09:33.722+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Notifying assignor about the new Assignment(partitions=[my-topic-02-0, my-topic-02-1])
+2025-04-09T11:09:33.722+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Adding newly assigned partitions: my-topic-02-0, my-topic-02-1
+2025-04-09T11:09:33.723+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Request joining group due to: need to re-join with the given member-id: consumer-group-my-topic-01-6-20c570df-9598-4d4e-9046-d61917f6a466
+2025-04-09T11:09:33.723+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] (Re-)joining group
+2025-04-09T11:09:33.723+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group-my-topic-03-8
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-my-topic-03
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-09T11:09:33.723+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-02-0 to the committed offset FetchPosition{offset=54958, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T11:09:33.723+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-02-1 to the committed offset FetchPosition{offset=50044, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T11:09:33.723+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-09T11:09:33.723+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-02: partitions assigned: [my-topic-02-0, my-topic-02-1]
+2025-04-09T11:09:33.725+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Successfully joined group with generation Generation{generationId=15, memberId='consumer-group-my-topic-01-6-20c570df-9598-4d4e-9046-d61917f6a466', protocol='range'}
+2025-04-09T11:09:33.725+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Finished assignment for group at generation 15: {consumer-group-my-topic-01-6-20c570df-9598-4d4e-9046-d61917f6a466=Assignment(partitions=[my-topic-01-0])}
+2025-04-09T11:09:33.726+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Cluster ID: PWGzVrumRyGH8LDAJv7f6Q
+2025-04-09T11:09:33.726+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Discovered group coordinator localhost:9090 (id: 2147483646 rack: null)
+2025-04-09T11:09:33.726+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] (Re-)joining group
+2025-04-09T11:09:33.726+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Successfully synced group in generation Generation{generationId=15, memberId='consumer-group-my-topic-01-6-20c570df-9598-4d4e-9046-d61917f6a466', protocol='range'}
+2025-04-09T11:09:33.727+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Notifying assignor about the new Assignment(partitions=[my-topic-01-0])
+2025-04-09T11:09:33.727+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Adding newly assigned partitions: my-topic-01-0
+2025-04-09T11:09:33.728+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-04-09T11:09:33.728+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-04-09T11:09:33.728+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1744164573728
+2025-04-09T11:09:33.729+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Subscribed to topic(s): my-topic-03
+2025-04-09T11:09:33.729+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-01-0 to the committed offset FetchPosition{offset=100005, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T11:09:33.729+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-01: partitions assigned: [my-topic-01-0]
+2025-04-09T11:09:33.730+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Request joining group due to: need to re-join with the given member-id: consumer-group-my-topic-03-7-a3b82b62-9b3b-4c4c-947d-30cec395c229
+2025-04-09T11:09:33.731+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] (Re-)joining group
+2025-04-09T11:09:33.732+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Cluster ID: PWGzVrumRyGH8LDAJv7f6Q
+2025-04-09T11:09:33.732+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Discovered group coordinator localhost:9090 (id: 2147483646 rack: null)
+2025-04-09T11:09:33.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] k.c.t.SpringKafkaConsumerTestApplication : Started SpringKafkaConsumerTestApplication in 0.381 seconds (process running for 1264.33)
+2025-04-09T11:09:33.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] (Re-)joining group
+2025-04-09T11:09:33.734+09:00  INFO 14392 --- [spring-kafka-consumer-test] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-09T11:09:33.736+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Request joining group due to: need to re-join with the given member-id: consumer-group-my-topic-03-8-1f93e1e7-7418-42b9-afdd-97726e366005
+2025-04-09T11:09:33.736+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] (Re-)joining group
+2025-04-09T11:09:36.727+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Request joining group due to: group is already rebalancing
+2025-04-09T11:09:36.728+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Revoke previously assigned partitions my-topic-03-0, my-topic-03-1, my-topic-03-2
+2025-04-09T11:09:36.728+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions revoked: [my-topic-03-0, my-topic-03-1, my-topic-03-2]
+2025-04-09T11:09:36.728+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] (Re-)joining group
+2025-04-09T11:09:36.730+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Successfully joined group with generation Generation{generationId=14, memberId='consumer-group-my-topic-03-7-a3b82b62-9b3b-4c4c-947d-30cec395c229', protocol='range'}
+2025-04-09T11:09:36.730+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Successfully joined group with generation Generation{generationId=14, memberId='consumer-group-my-topic-03-4-ea06dde3-f7fe-499c-89ff-81b4b477bfbd', protocol='range'}
+2025-04-09T11:09:36.730+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Successfully joined group with generation Generation{generationId=14, memberId='consumer-group-my-topic-03-8-1f93e1e7-7418-42b9-afdd-97726e366005', protocol='range'}
+2025-04-09T11:09:36.730+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Finished assignment for group at generation 14: {consumer-group-my-topic-03-7-a3b82b62-9b3b-4c4c-947d-30cec395c229=Assignment(partitions=[my-topic-03-1]), consumer-group-my-topic-03-8-1f93e1e7-7418-42b9-afdd-97726e366005=Assignment(partitions=[my-topic-03-2]), consumer-group-my-topic-03-4-ea06dde3-f7fe-499c-89ff-81b4b477bfbd=Assignment(partitions=[my-topic-03-0])}
+2025-04-09T11:09:36.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Successfully synced group in generation Generation{generationId=14, memberId='consumer-group-my-topic-03-7-a3b82b62-9b3b-4c4c-947d-30cec395c229', protocol='range'}
+2025-04-09T11:09:36.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Successfully synced group in generation Generation{generationId=14, memberId='consumer-group-my-topic-03-4-ea06dde3-f7fe-499c-89ff-81b4b477bfbd', protocol='range'}
+2025-04-09T11:09:36.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Successfully synced group in generation Generation{generationId=14, memberId='consumer-group-my-topic-03-8-1f93e1e7-7418-42b9-afdd-97726e366005', protocol='range'}
+2025-04-09T11:09:36.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Notifying assignor about the new Assignment(partitions=[my-topic-03-1])
+2025-04-09T11:09:36.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Notifying assignor about the new Assignment(partitions=[my-topic-03-0])
+2025-04-09T11:09:36.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Notifying assignor about the new Assignment(partitions=[my-topic-03-2])
+2025-04-09T11:09:36.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Adding newly assigned partitions: my-topic-03-0
+2025-04-09T11:09:36.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Adding newly assigned partitions: my-topic-03-1
+2025-04-09T11:09:36.733+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Adding newly assigned partitions: my-topic-03-2
+2025-04-09T11:09:36.735+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-03-2 to the committed offset FetchPosition{offset=29691, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T11:09:36.735+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-03-0 to the committed offset FetchPosition{offset=33473, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T11:09:36.735+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition my-topic-03-1 to the committed offset FetchPosition{offset=38836, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9090 (id: 1 rack: null)], epoch=0}}
+2025-04-09T11:09:36.735+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions assigned: [my-topic-03-1]
+2025-04-09T11:09:36.735+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions assigned: [my-topic-03-2]
+2025-04-09T11:09:36.735+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions assigned: [my-topic-03-0]
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Revoke previously assigned partitions my-topic-03-0
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Revoke previously assigned partitions my-topic-02-0, my-topic-02-1
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Revoke previously assigned partitions my-topic-03-2
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Revoke previously assigned partitions my-topic-03-1
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions revoked: [my-topic-03-0]
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions revoked: [my-topic-03-2]
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-02: partitions revoked: [my-topic-02-0, my-topic-02-1]
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Revoke previously assigned partitions my-topic-01-0
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Member consumer-group-my-topic-03-4-ea06dde3-f7fe-499c-89ff-81b4b477bfbd sending LeaveGroup request to coordinator localhost:9090 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Member consumer-group-my-topic-03-8-1f93e1e7-7418-42b9-afdd-97726e366005 sending LeaveGroup request to coordinator localhost:9090 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Member consumer-group-my-topic-02-5-d42bcf5f-48ab-4ee5-b0eb-26296afcb0d6 sending LeaveGroup request to coordinator localhost:9090 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-01: partitions revoked: [my-topic-01-0]
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: partitions revoked: [my-topic-03-1]
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Member consumer-group-my-topic-01-6-20c570df-9598-4d4e-9046-d61917f6a466 sending LeaveGroup request to coordinator localhost:9090 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Member consumer-group-my-topic-03-7-a3b82b62-9b3b-4c4c-947d-30cec395c229 sending LeaveGroup request to coordinator localhost:9090 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.882+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Unsubscribed all topics or patterns and assigned partitions
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Unsubscribed all topics or patterns and assigned partitions
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Unsubscribed all topics or patterns and assigned partitions
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Unsubscribed all topics or patterns and assigned partitions
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Unsubscribed all topics or patterns and assigned partitions
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-4, groupId=group-my-topic-03] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-02-5, groupId=group-my-topic-02] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-7, groupId=group-my-topic-03] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.883+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.884+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-01-6, groupId=group-my-topic-01] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:52.884+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-my-topic-03-8, groupId=group-my-topic-03] Request joining group due to: consumer pro-actively leaving the group
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-09T11:11:53.302+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-04-09T11:11:53.310+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-group-my-topic-03-4 unregistered
+2025-04-09T11:11:53.311+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: Consumer stopped
+2025-04-09T11:11:53.311+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-group-my-topic-01-6 unregistered
+2025-04-09T11:11:53.311+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#4-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-01: Consumer stopped
+2025-04-09T11:11:53.311+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-group-my-topic-03-8 unregistered
+2025-04-09T11:11:53.311+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: Consumer stopped
+2025-04-09T11:11:53.311+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-group-my-topic-02-5 unregistered
+2025-04-09T11:11:53.311+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-02: Consumer stopped
+2025-04-09T11:11:53.311+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-group-my-topic-03-7 unregistered
+2025-04-09T11:11:53.312+09:00  INFO 14392 --- [spring-kafka-consumer-test] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-my-topic-03: Consumer stopped
+2025-04-09T11:11:53.312+09:00  INFO 14392 --- [spring-kafka-consumer-test] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-09T11:11:53.427+09:00  INFO 14392 --- [spring-kafka-consumer-test] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
